@@ -18,7 +18,9 @@ class ArticlesPageViewModel extends ChangeNotifier {
     });
   }
 
-  List<Article> _articles = [];
+  // static as if change VM object could keep data
+  // todo can cache inside repository/manager
+  static List<Article> _articles = [];
 
   List<Article> get articles => _articles;
 
