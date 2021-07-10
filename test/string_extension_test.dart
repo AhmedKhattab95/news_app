@@ -1,9 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:intl/intl.dart';
-import 'package:news_app/core/extensions/extensions_lib.dart';
+import 'package:news_app/core/core_lib.dart';
 
 void main() {
-  group('String extension tests', () {
+  group('isNullOrWhiteSpace String extension tests', () {
     test('return true if string is empty', () {
       String out = '';
       expect(out.isNullOrWhiteSpace(), true);
@@ -24,6 +23,12 @@ void main() {
       String out = 'this message came from any where';
       expect(out.isNullOrWhiteSpace(), false);
     });
+  });
 
+  group('captalize String extension tests', () {
+    test('not throw exception if empty', () {
+      String out = '';
+      expect(out.captalize(), '');
+    });
   });
 }

@@ -5,4 +5,8 @@ extension StringExtensions on String {
         this.trim() == "" ||
         this.trim() == "null";
   }
+
+  String captalize() {
+    return "${this[0].toUpperCase()}${this.substring(1)}";
+  }
 }

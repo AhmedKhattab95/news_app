@@ -1,6 +1,5 @@
 import 'package:get_it/get_it.dart';
-import 'package:news_app/Core/managers/managers_lib.dart';
-
+import 'package:news_app/core/core_lib.dart';
 import 'managers/managers_lib.dart';
 import 'repositories/repository_lib.dart';
 
@@ -20,10 +19,10 @@ class InjectionSetup implements IInjectionSetup {
 
   @override
   void setup() {
-    registerSingleton<ICacheManager>(CacheManager());
     registerSingleton<IConnectivityManager>(ConnectivityManager());
     registerSingleton<IArticlesRepository>(ArticlesRepository());
-    registerSingleton<IArticleManager>(ArticleManager(get<IArticlesRepository>()));
+    registerSingleton<IArticleManager>(
+        ArticleManager(get<IArticlesRepository>()));
   }
 
   @override
@@ -35,12 +34,8 @@ class InjectionSetup implements IInjectionSetup {
   }
 
   @override
-  void registerSingleton<T extends Object>(T instance,
-      {String? instanceName, bool? signalsReady, DisposingFunc<T>? dispose}) {
-    _getIt.registerSingleton<T>(instance,
-        instanceName: instanceName,
-        signalsReady: signalsReady,
-        dispose: dispose);
+  void registerSingleton<T extends Object>(T instance) {
+    _getIt.registerSingleton<T>(instance);
   }
 
   @override
@@ -66,12 +61,7 @@ abstract class IInjectionSetup {
   Future<T> getAsync<T extends Object>();
 
   /// register classes as singleton
-  void registerSingleton<T extends Object>(
-    T instance, {
-    String? instanceName,
-    bool? signalsReady,
-    DisposingFunc<T>? dispose,
-  });
+  void registerSingleton<T extends Object>(T instance);
 
   /// register classes as factory
   void registerFactory<T extends Object>(
