@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/app/pages/articles_page/articles_page_view.dart';
 import 'package:news_app/app/theme/theme_lib.dart';
 
-void main() {
+import 'app/injection_setup.dart';
+
+final GlobalKey<NavigatorState> navigatorKey = new GlobalKey<NavigatorState>();
+
+final IInjectionSetup DI = InjectionSetup.Instance;
+
+void main() async{
+  DI.setup();
+  await Future.delayed(Duration(milliseconds: 200));
   runApp(MyApp());
 }
 
@@ -9,10 +18,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: AppText.appTtile,
-      theme: AppTheme.primaryTheme,
-      home: MyHomePage(title: AppText.appTtile),
-    );
+        title: AppText.appTtile,
+        theme: AppTheme.primaryTheme,
+        navigatorKey: navigatorKey,
+        home: ArticlesPageView(),
+);
   }
 }
 
