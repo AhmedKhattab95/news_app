@@ -9,6 +9,9 @@ class AppText {
   static const String exploreOnlineNews = "Explore Online News";
   static const String welcome = "welcome";
   static const String serviceUnavilable = "Sorry, service is not avilable";
+  static const String articleDetails = "Article Details";
+  static const String openWebSite = "Open Website";
   static const String noItemsAvilable =
       "There are no items avilable to be displayed";
+
 }
