@@ -1,5 +1,5 @@
 import 'package:get_it/get_it.dart';
-import 'package:news_app/core/managers/managers_lib.dart';
+import 'package:news_app/core/core_lib.dart';
 import 'managers/managers_lib.dart';
 import 'repositories/repository_lib.dart';
 

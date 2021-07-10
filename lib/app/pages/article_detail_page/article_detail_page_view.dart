@@ -3,7 +3,7 @@ import 'package:news_app/app/models/models_lib.dart';
 import 'package:news_app/app/shared_views/article_card.dart';
 import 'package:news_app/app/theme/app_text.dart';
 import 'package:news_app/app/theme/theme_lib.dart';
-import 'package:news_app/core/extensions/extensions_lib.dart';
+import 'package:news_app/core/core_lib.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ArticleDetailPageView extends StatelessWidget {

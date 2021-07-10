@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/app/managers/managers_lib.dart';
 import 'package:news_app/app/models/models_lib.dart';
-import 'package:news_app/core/managers/managers_lib.dart';
+import 'package:news_app/core/core_lib.dart';
 
 class ArticlesPageViewModel extends ChangeNotifier {
   final IArticleManager _articleManager;

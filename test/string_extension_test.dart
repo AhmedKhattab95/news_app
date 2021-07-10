@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:intl/intl.dart';
-import 'package:news_app/core/extensions/extensions_lib.dart';
+import 'package:news_app/core/core_lib.dart';
 
 void main() {
   group('isNullOrWhiteSpace String extension tests', () {
@@ -24,7 +23,6 @@ void main() {
       String out = 'this message came from any where';
       expect(out.isNullOrWhiteSpace(), false);
     });
-
   });
 
   group('captalize String extension tests', () {

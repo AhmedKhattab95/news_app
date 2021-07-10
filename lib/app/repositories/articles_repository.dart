@@ -1,9 +1,5 @@
-import 'package:http/http.dart';
-import 'package:news_app/app/models/article.dart';
 import 'package:news_app/app/utils/urls.dart';
-import 'package:news_app/core/base_repository.dart';
 import 'package:news_app/core/core_lib.dart';
-
 import 'repository_lib.dart';
 
 class ArticlesRepository extends IArticlesRepository {

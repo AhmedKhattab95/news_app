@@ -3,8 +3,7 @@ import 'package:news_app/app/pages/articles_page/articles_page_view.dart';
 import 'package:news_app/app/pages/empty_data_page/empty_data_page.dart';
 import 'package:news_app/app/theme/app_assets.dart';
 import 'package:news_app/app/theme/app_text.dart';
-import 'package:news_app/core/extensions/extensions_lib.dart';
-import 'package:news_app/app/utils/page_routes.dart';
+import 'package:news_app/core/core_lib.dart';
 import 'package:news_app/main.dart';
 
 class navigationDrawer extends StatelessWidget {

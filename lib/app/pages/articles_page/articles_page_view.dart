@@ -5,10 +5,8 @@ import 'package:news_app/app/pages/article_detail_page/article_detail_page_view.
 import 'package:news_app/app/pages/navigation_drawer.dart';
 import 'package:news_app/app/shared_views/article_card.dart';
 import 'package:news_app/app/shared_views/no_data.dart';
-import 'package:news_app/core/managers/managers_lib.dart';
-import 'package:news_app/core/views/loader.dart';
+import 'package:news_app/core/core_lib.dart';
 import 'package:news_app/app/theme/theme_lib.dart';
-import 'package:news_app/core/views/no_connection_view.dart';
 import 'package:news_app/main.dart';
 import 'package:provider/provider.dart';
 

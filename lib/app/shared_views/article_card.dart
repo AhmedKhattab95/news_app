@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/app/models/models_lib.dart';
 import 'package:news_app/app/utils/constants.dart';
-import 'package:news_app/core/extensions/extensions_lib.dart';
+import 'package:news_app/core/core_lib.dart';
 import 'package:news_app/app/theme/app_text.dart';
 import 'package:news_app/app/theme/theme_lib.dart';
 
