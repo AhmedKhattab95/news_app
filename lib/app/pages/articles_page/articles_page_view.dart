@@ -43,7 +43,8 @@ class ArticlesPageView extends StatelessWidget {
     if (!vm.connected && vm.articles.isEmpty)
       return _wrapWithStackAndListView(NoConnectionView());
     if (vm.loading) return Loader();
-    if (vm.articles.isEmpty) return NoData(iconSize: 70);
+    if (vm.articles.isEmpty)
+      return _wrapWithStackAndListView(NoData(iconSize: 70));
     return _articles(vm);
   }
 
