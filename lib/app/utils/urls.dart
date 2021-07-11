@@ -1,5 +1,5 @@
 abstract class Urls {
-  static const String ApiKey = "4ad6f761da3c4acd88e608311e4095ea";
+  static const String ApiKey = "1c0f731cca954a13875e6965f9c7e9de";
   static const String BaseUrl = "https://newsapi.org";
 
   static String get associatedPressArticlesUrl =>
