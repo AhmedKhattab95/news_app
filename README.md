@@ -1,4 +1,6 @@
 # news_app
+browse code on visual studio code online:
+<a>https://github1s.com/AhmedKhattab95/news_app</a>
 # structure of App </br>
 ![Screenshot 2021-07-11 021559](https://user-images.githubusercontent.com/17656876/125179322-f80c8180-e1ed-11eb-9355-629338dbf867.png)
 </br>
