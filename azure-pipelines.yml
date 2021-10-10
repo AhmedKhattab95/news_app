@@ -23,10 +23,7 @@ jobs:
     steps:
       - task: FlutterInstall@0
         displayName: Setup flutter
-        inputs:
-          channel: '$(FlutterChannel)'
-          version: '$(FlutterVersion)'
-
+   
       - task: PowerShell@2
         displayName: Setup environment
         inputs:
@@ -72,13 +69,14 @@ jobs:
           buildName: '$(BuildName)'
           buildNumber: '$(BuildNumber)'
 
-      - task: AppCenterDistribute@3
-        displayName: Run distribute
-        inputs:
-          serverEndpoint: 'AppCenter Service Connection'
-          appSlug: '$(ProjectSlug)'
-          appFile: '$(BuildDirectory)'
-          releaseNotesOption: 'input'
-          releaseNotesInput: '$(BuildMessage)'
-          destinationType: 'groups'
-          distributionGroupId: '$(DistributionGroup)'
+
+      # - task: AppCenterDistribute@3
+      #   displayName: Run distribute
+      #   inputs:
+      #     serverEndpoint: 'AppCenter Service Connection'
+      #     appSlug: '$(ProjectSlug)'
+      #     appFile: '$(BuildDirectory)'
+      #     releaseNotesOption: 'input'
+      #     releaseNotesInput: '$(BuildMessage)'
+      #     destinationType: 'groups'
+      #     distributionGroupId: '$(DistributionGroup)'
