@@ -7,6 +7,8 @@ extension StringExtensions on String {
   }
 
   String captalize() {
+    if(this.length < 2)
+      return this.toUpperCase();
     return "${this[0].toUpperCase()}${this.substring(1)}";
   }
 }
