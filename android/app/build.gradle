@@ -68,6 +68,11 @@ android {
             applicationId "com.example.news_app"
         }
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 
