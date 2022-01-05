@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/app.dart';
 import 'package:news_app/app/managers/managers_lib.dart';
 import 'package:news_app/app/models/models_lib.dart';
 import 'package:news_app/app/pages/article_detail_page/article_detail_page_view.dart';
@@ -7,7 +8,6 @@ import 'package:news_app/app/shared_views/article_card.dart';
 import 'package:news_app/app/shared_views/no_data.dart';
 import 'package:news_app/core/core_lib.dart';
 import 'package:news_app/app/theme/theme_lib.dart';
-import 'package:news_app/main.dart';
 import 'package:provider/provider.dart';
 
 import 'articles_page_view_model.dart';

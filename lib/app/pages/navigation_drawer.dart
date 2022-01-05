@@ -4,7 +4,7 @@ import 'package:news_app/app/pages/empty_data_page/empty_data_page.dart';
 import 'package:news_app/app/theme/app_assets.dart';
 import 'package:news_app/app/theme/app_text.dart';
 import 'package:news_app/core/core_lib.dart';
-import 'package:news_app/main.dart';
+import 'package:news_app/app.dart';
 
 class navigationDrawer extends StatelessWidget {
   final double? imageSize = 25;

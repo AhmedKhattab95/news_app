@@ -34,7 +34,6 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.news_app"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
@@ -48,7 +47,29 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    flavorDimensions "app"
+
+    productFlavors {
+        development {
+            dimension "app"
+            resValue ("string", "app_name", "news App Dev")
+            applicationId "com.example.news_app.dev"
+        }
+
+        qa {
+            dimension "app"
+            resValue ("string", "app_name", "news App QA")
+            applicationId "com.example.news_app.qa"
+        }
+
+        production {
+            dimension "app"
+            resValue ("string", "app_name", "news App")
+            applicationId "com.example.news_app"
+        }
+    }
 }
+
 
 flutter {
     source '../..'

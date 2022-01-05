@@ -5,24 +5,21 @@ import 'package:news_app/app/theme/theme_lib.dart';
 import 'app/injection_setup.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = new GlobalKey<NavigatorState>();
-
 final IInjectionSetup DI = InjectionSetup.Instance;
 
-void main() async{
-  DI.setup();
-  await Future.delayed(Duration(milliseconds: 200));
-  runApp(MyApp());
-}
-
 class MyApp extends StatelessWidget {
+  final String flavor;
+
+  const MyApp({Key? key, required this.flavor}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: AppText.appTtile,
-        theme: AppTheme.primaryTheme,
-        navigatorKey: navigatorKey,
-        home: ArticlesPageView(),
-);
+      title: flavor,
+      theme: AppTheme.primaryTheme,
+      navigatorKey: navigatorKey,
+      home: ArticlesPageView(),
+    );
   }
 }
 
